@@ -2,3 +2,4 @@ streamlit>=1.25.0  # 최소 버전 1.25.0 이상 지정
 pandas
 plotly
 openpyxl
+statsmodels
