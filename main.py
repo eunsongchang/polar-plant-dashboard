@@ -224,12 +224,11 @@ with tab1:
             "색상": data["color"],
             "총 개체수": f"{growth_count}개체"
         })
-    ec_table = pd.DataFrame(ec_data)
-    st.dataframe(ec_table, 
-                 hide_index=True, 
-                 column_config={"색상": st.column_config.Color(width="small")},
+    ec_table = pd.DataFrame(ec_data)                                    
+    st.dataframe(ec_table,                                              
+                 hide_index=True,                                       
+                 # column_config={"색상": st.column_config.Color(width="small")},  # 이 부분을 주석 처리하거나 제거
                  use_container_width=True)
-
     st.subheader("주요 지표 요약")
     
     # 주요 지표 계산
